@@ -18,19 +18,17 @@ public class Gender {
     @NonNull
     @Column(name = "Code",nullable = false)
     private char codeGender;
+
     @Column(name = "Name")
     private String name;
 
 
-    @OneToMany(mappedBy = "codeGender")
+    @OneToMany(mappedBy = "gender")
     Set<Client> setGender;
 
 
     @Override
     public String toString() {
-        return "Gender{" +
-                "codeGender=" + codeGender +
-                ", name='" + name + '\'' +
-                '}';
+        return name;
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="h8.chikey.control.ClientWidowController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="310.0" prefWidth="580.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnFirstName" prefWidth="75.0" text="FirstName" />
+            <TableColumn fx:id="columnLastName" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="columnPatronymic" prefWidth="88.0" text="Patronymic" />
+            <TableColumn fx:id="columnBirthday" prefWidth="81.0" text="Birthday" />
+            <TableColumn fx:id="columnRegistrationDate" prefWidth="109.0" text="RegistrationDate" />
+            <TableColumn fx:id="columnEmail" prefWidth="47.0" text="Email" />
+            <TableColumn fx:id="columnPhone" prefWidth="50.0" text="Phone" />
+            <TableColumn fx:id="columnGender" prefWidth="85.0" text="Gender" />
+            <TableColumn fx:id="columnPhotoPath" prefWidth="94.0" text="PhotoPath" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonExit" layoutX="789.0" layoutY="463.0" mnemonicParsing="false" text="Exit" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button layoutX="22.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteClient" text="Delete" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="361.0" />
+      <Button layoutX="68.0" layoutY="363.0" mnemonicParsing="false" onAction="#openCreateWin" text="Create" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="68.0" />
+      <Button layoutX="133.0" layoutY="363.0" mnemonicParsing="false" onAction="#openUpdate" text="Update" />
+   </children>
+</AnchorPane>

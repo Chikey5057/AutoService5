@@ -41,7 +41,7 @@ public class Service {
     @Column(name = "MainImagePath")
     private String mainImagePath;
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "serviceId")
+    @OneToMany(mappedBy = "service")
     Set<ClientService> setService;
 
     @Override

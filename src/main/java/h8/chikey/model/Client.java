@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -45,12 +46,16 @@ public class Client {
     @Column(name = "Phone")
     private String phone;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "GenderCode")
     private Gender gender;
 
     @Column(name = "PhotoPath")
     private String photoPath;
+
+    @OneToMany(mappedBy = "client")
+    Set<ClientService> setClient;
+
 
     @Override
     public String toString() {
