@@ -114,5 +114,11 @@ public class ClientWidowController {
         stage.show();
     }
 }
-
-//g
+//git init
+//git status
+//git add --all
+//git commit -m"wgmwg"
+//
+//git remote
+//git remote add VETKA url
+//git push github
